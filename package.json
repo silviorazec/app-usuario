@@ -1,0 +1,56 @@
+{
+  "name": "app-usuario",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "keycloak-js": "^26.0.6",
+    "react-router-dom": "^7.0.1"
+  },
+  "scripts": {
+    "start:development": "dotenv -e .env.development react-scripts start",
+    "start:staging": "dotenv -e .env.staging react-scripts start",
+    "start:production": "dotenv -e .env.production react-scripts start",
+    "build:development": "cross-env NODE_ENV=development react-scripts build",
+    "build:staging": "cross-env NODE_ENV=staging react-scripts build",
+    "build:production": "cross-env NODE_ENV=production react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@react-keycloak/web": "^3.4.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/axios": "^0.14.4",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.119",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-router-dom": "^5.3.3",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^7.4.4",
+    "keycloak-js": "^26.0.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "type": "module"
+}
